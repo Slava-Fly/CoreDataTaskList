@@ -6,8 +6,6 @@ class TaskListViewController: UITableViewController {
     private let cellID = "task"
     private let storageManager = StorageManager.shared
     private var taskList: [Task] = []
-    
-    private let viewContext = (StorageManager.shared.persistentContainer).viewContext
 
     override func viewDidLoad() {
         super.viewDidLoad()
